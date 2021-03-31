@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshdesk clone
+
+    </title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="bootsrap" hred="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></a>
+</head>
+
+<body>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <div class="container-fluid cont">
+
+
+
+
+
+
+        <div class="sidebar bott">
+            <div class="frs">
+
+                <img src="freshdeskimg.png" class="imgfrs" alt="image" />
+
+            </div>
+            <div class="iconss">
+                <a href="index.html">
+                    <i class="fa fa-ticket" style="font-size:30px;color:rgb(240, 234, 234);padding:40px 10px;"
+                        aria-hidden="true"></i>
+
+                </a>
+            </div>
+            <div class="iconss">
+                <a href="#contact">
+
+                    <i class="fa fa-address-book" style="font-size:30px;color:rgb(240, 234, 234);padding:40px 10px;"
+                        aria-hidden="true"></i>
+                </a>
+               
+            </div>
+        </div>
+
+
+       
+
+
+    </div>
+
+    <div id="contact" class="contacts">
+
+
+        <div class="tick row">
+            <h2 class="blocking col-8">Contacts</h2>
+
+            <a class="addlink col-4" href="#" data-target="#addcontact" data-toggle="modal"> <button class="btn btn-warning btn-lg   float">
+                    Add Contact
+                </button> </a>
+
+
+        </div>
+
+
+        <table class="table table-responsive-md contactlist">
+            <thead>
+                <tr>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Email address</th>
+                    <th scope="col">Work Phone</th>
+                    <th scope="col">Twitter</th>
+                    <th scope="col">Facebook</th>
+                </tr>
+            </thead>
+            <tbody id="contactbody">
+
+
+
+
+
+            </tbody>
+        </table>
+
+
+        <div class="modal" id="mymodal" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Update Contact</h5>
+
+                    </div>
+                    <div class="modal-body">
+
+                        <form id="myform">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control" id="title">
+                            </div>
+                            <div class="form-group">
+                                <label for="Email">Email address</label>
+                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="number" class="form-control" id="phone" placeholder="99999999">
+                            </div>
+    
+
+
+                            <button type="submit" onclick="updateform(event)" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                     
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="modal" id="addcontact" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Contact</h5>
+
+                    </div>
+                    <div class="modal-body">
+
+                        <form id="contactform">
+                            <div class="form-group">
+                                <label for="namecont">Name</label>
+                                <input type="text" class="form-control" id="namecont" placeholder="John doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="titlecont">Title</label>
+                                <input type="text" class="form-control" id="titlecont">
+                            </div>
+                            <div class="form-group">
+                                <label for="Emailcont">Email address</label>
+                                <input type="email" class="form-control" id="Emailcont" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="phonecont">Phone</label>
+                                <input type="number" class="form-control" id="phonecont" placeholder="99999999">
+                            </div>
+                      
+
+
+                            <button type="submit" onclick="adddetails(event)" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+
+
+</html>
